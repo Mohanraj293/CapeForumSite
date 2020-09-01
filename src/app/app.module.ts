@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule,NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { RouterModule } from '@angular/router'
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +16,6 @@ import { GovernanceComponent } from './Governance/governance.component';
 import { MembershipCompoent } from './Memberships/memberships.component';
 import { FounderComponent } from './about-founder/founder.component';
 import { ContactComponent } from './contact-us/contact-us.component';
-import { NewsLetterComponent } from './news-letter/news-letter.component';
 import { PublicationComponent } from './publications/publications.component';
 import { ResearchAwardComponent } from './Awards/Research/research.component';
 import { EntrepreneurAwardComponent } from './Awards/entrepreneur/entrepreneur.component';
@@ -25,9 +24,7 @@ import { StudentsAwardComponent } from './Awards/students/students.component';
 import { TeachersAwardComponent } from './Awards/teachers/teachers.component';
 import { WomenAwardComponent } from './Awards/women/women.component';
 import { GalleryComponent } from './Activities-galleries/gallery.component';
-import { FooterComponent} from './footer/footer.component'
-
-
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +40,6 @@ import { FooterComponent} from './footer/footer.component'
     MembershipCompoent,
     FounderComponent,
     ContactComponent,
-    NewsLetterComponent,
     PublicationComponent,
     ResearchAwardComponent,
     EntrepreneurAwardComponent,
@@ -52,7 +48,7 @@ import { FooterComponent} from './footer/footer.component'
     TeachersAwardComponent,
     WomenAwardComponent,
     GalleryComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,87 +57,85 @@ import { FooterComponent} from './footer/footer.component'
     RouterModule.forRoot([
       {
         path: '',
-        component: HomeComponent
+        component: HomeComponent,
       },
       {
         path: 'founder',
-        component: FounderComponent
+        component: FounderComponent,
       },
       {
         path: 'governance',
-        component: GovernanceComponent
+        component: GovernanceComponent,
       },
       {
         path: 'research',
-        component: ResearchForumComponent
+        component: ResearchForumComponent,
       },
       {
         path: 'students',
-        component: StudentsForumComponent
+        component: StudentsForumComponent,
       },
       {
         path: 'teachers',
-        component: TeachersForumComponent
+        component: TeachersForumComponent,
       },
       {
         path: 'women',
-        component: WomenForumComponent
+        component: WomenForumComponent,
       },
       {
         path: 'farmers',
-        component: FarmersForumComponent
+        component: FarmersForumComponent,
       },
       {
         path: 'research-award',
-        component: ResearchAwardComponent
+        component: ResearchAwardComponent,
       },
       {
         path: 'students-award',
-        component: StudentsAwardComponent
+        component: StudentsAwardComponent,
       },
       {
         path: 'teachers-award',
-        component: TeachersAwardComponent
+        component: TeachersAwardComponent,
       },
       {
         path: 'women-award',
-        component: WomenAwardComponent
+        component: WomenAwardComponent,
       },
       {
         path: 'other-award',
-        component: OtherAwardComponent
+        component: OtherAwardComponent,
       },
       {
         path: 'entrepreneur-award',
-        component: EntrepreneurAwardComponent
+        component: EntrepreneurAwardComponent,
       },
       {
         path: 'publications',
-        component: PublicationComponent
+        component: PublicationComponent,
       },
       {
         path: 'memberships',
-        component: MembershipCompoent
+        component: MembershipCompoent,
       },
       {
         path: 'gallery',
-        component: GalleryComponent
-      },
-      {
-        path: 'news',
-        component: NewsLetterComponent
+        component: GalleryComponent,
       },
       {
         path: 'contactus',
-        component: ContactComponent
+        component: ContactComponent,
       },
       {
-         path: '**', redirectTo: '', pathMatch: 'full' 
-      }
-    ])
+        path: '**',
+        redirectTo: '',
+        pathMatch: 'full',
+      },
+    ]),
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
